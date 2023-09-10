@@ -3,85 +3,200 @@
 <head>
 <meta charset="utf-8">
 <title>生日快乐！---一生有你 -- 星影Flash</title>
+<link rel="stylesheet" href="//cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css">
+<link href='//cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/solid.min.css' rel='stylesheet'>
+<link href='//cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css' rel='stylesheet'>
+<style>
+#links > a, #links > a:link, #links > a:visited {
+	color: red;
+}
+#links > a:hover {
+	color: green;
+}
+
+#nav > a, #nav > a:link, #nav > a:visited {
+	color: black;
+}
+#nav > a:hover {
+	color: white;
+}
+.recommend_list li .recommend_detail .detail .dname {
+	width: 250px !important;
+}
+
+/*自定义样式*/
+.with-love {
+	display: inline-block;
+	color: red;
+	margin: 0 5px;
+	animation: iconAnimate 1.33s ease-in-out infinite;
+}
+@-moz-keyframes iconAnimate {
+	0%, 100% {
+		transform:scale(1)
+	}
+	10%, 30% {
+		transform:scale(.9)
+	}
+	20%, 40%, 50%, 60%, 70%, 80% {
+		transform:scale(1.1)
+	}
+}
+@-webkit-keyframes iconAnimate {
+	0%, 100% {
+		transform:scale(1)
+	}
+	10%, 30% {
+		transform:scale(.9)
+	}
+	20%, 40%, 50%, 60%, 70%, 80% {
+		transform:scale(1.1)
+	}
+}
+@-o-keyframes iconAnimate {
+	0%, 100% {
+		transform:scale(1)
+	}
+	10%, 30% {
+		transform:scale(.9)
+	}
+	20%, 40%, 50%, 60%, 70%, 80% {
+		transform:scale(1.1)
+	}
+}
+@keyframes iconAnimate {
+	0%, 100% {
+		transform:scale(1)
+	}
+	10%, 30% {
+		transform:scale(.9)
+	}
+	20%, 40%, 50%, 60%, 70%, 80% {
+		transform:scale(1.1)
+	}
+}
+.sep
+{
+	color:red
+}
+</style>
 <script type="text/javascript" src="jwplayer/jwplayer.js"></script>
 </head>
 <body>
-<center><div id="jwplayer"></div></center>
-<script type="text/javascript">
-const playerInstance = jwplayer("jwplayer").setup({
-	//base: "/forever/jwplayer",
-	file: "https://189.ly93.cc/uEBNrauMrqI3/92369161241297172?accessCode=ifq0",
-	image: "happy.jpg",
-	type: "mp4",
-	aspectratio: "16:7.5",
-	title: "生日快乐！(点击播放)",
-	description: "Wish You Happy Everyday!",
-	//autostart: "viewable",
-	stretching: "exactfit",
-	repeat: false,
-	volume: 90,
-	width: '100%',  
-    dock: true,
-	controls:true,
-	skin: {
-		name: 'alaska',
-		url: 'alaska.css'
-	},
-	displaydescription: true,
-    displaytitle: true,
-    playbackRateControls: false,
-    preload: "metadata",
-    stretching: "uniform",
-	
-	aboutlink:'https://www.itisxx.com',
-	abouttext:'I love you forever'
-});
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" style="margin-top: 0px;">
+			<div id="nav" class="col-md-12 text-center">
+				<a role="button" class="btn btn-outline-primary btn-lg" target="_blank" href="https://www.swiftdown.com">极速资源网</a>&nbsp;&nbsp;
+				<a role="button" class="btn btn-outline-secondary btn-lg" target="_blank" href="">Pintuer</a>&nbsp;&nbsp;
+				<a role="button" class="btn btn-outline-success btn-lg" target="_blank" href="">Bootstrap</a>&nbsp;&nbsp;
+				<a role="button" class="btn btn-outline-danger btn-lg" target="_blank" href="https://www.12342.net">精品域名</a>&nbsp;&nbsp;
+				<a role="button" class="btn btn-outline-warning btn-lg" target="_blank" href="">网址导航</a>&nbsp;&nbsp;
+				<a role="button" class="btn btn-outline-info btn-lg" target="_blank" href="https://www.themepretty.com">漂亮主题</a>&nbsp;&nbsp;
+				<a role="button" class="btn btn-outline-dark btn-lg" target="_blank" href="#">音乐</a>&nbsp;&nbsp;
+				<a role="button" class="btn btn-outline-primary btn-lg" target="_blank" href="http://demo.jgpy.cn/kandytabs/">吉光片羽Tab</a>
+			</div>
+			<div class="col-md-12" style="margin-top: 0px;">
+				<div id="jwplayer"></div>
+				<script type="text/javascript">
+				const playerInstance = jwplayer("jwplayer").setup({
+					//base: "/forever/jwplayer",
+					file: "https://189.ly93.cc/uEBNrauMrqI3/92369161241297172?q=C-cUS2US8M3rq5do7T3sEQ",
+					image: "happy.jpg",
+					type: "mp4",
+					aspectratio: "16:7",
+					title: "生日快乐！(点击播放)",
+					description: "Wish You Happy Everyday!",
+					//autostart: "viewable",
+					stretching: "exactfit",
+					repeat: false,
+					volume: 90,
+					width: '100%',  
+					dock: true,
+					controls:true,
+					skin: {
+						name: 'alaska',
+						url: 'alaska.css'
+					},
+					displaydescription: true,
+					displaytitle: true,
+					playbackRateControls: false,
+					preload: "metadata",
+					stretching: "uniform",
+					
+					aboutlink:'https://www.itisxx.com',
+					abouttext:'I love you forever'
+				});
 
-const buttonId = 'download-video-button';
-const iconPath = 'love.png';
-const tooltipText = '下载';
+				const buttonId = 'download-video-button';
+				const iconPath = 'love.png';
+				const tooltipText = '下载';
 
-// Call the player's `addButton` API method to add the custom button
-playerInstance.addButton(iconPath, tooltipText, buttonClickAction, buttonId);
+				// Call the player's `addButton` API method to add the custom button
+				playerInstance.addButton(iconPath, tooltipText, buttonClickAction, buttonId);
 
-// This function is executed when the button is clicked
-function buttonClickAction() {
-  const playlistItem = playerInstance.getPlaylistItem();
+				// This function is executed when the button is clicked
+				function buttonClickAction() {
+				  const playlistItem = playerInstance.getPlaylistItem();
 
-  // Create an anchor element
-  const anchor = document.createElement('a');
+				  // Create an anchor element
+				  const anchor = document.createElement('a');
 
-  // Set the anchor's `href` attribute to the media's file URL
-  const fileUrl = playlistItem.file;
-  anchor.setAttribute('href', fileUrl);
+				  // Set the anchor's `href` attribute to the media's file URL
+				  const fileUrl = playlistItem.file;
+				  anchor.setAttribute('href', fileUrl);
 
-  // set the anchor's `download` attribute to the media's file name
-  const downloadName = playlistItem.file.split('/').pop();
-  anchor.setAttribute('download', downloadName);
+				  // set the anchor's `download` attribute to the media's file name
+				  const downloadName = playlistItem.file.split('/').pop();
+				  anchor.setAttribute('download', downloadName);
 
-  // Set the anchor's style to hide it when it's added to the page
-  anchor.style.display = 'none';
+				  // Set the anchor's style to hide it when it's added to the page
+				  anchor.style.display = 'none';
 
-  // Add the anchor to the page
-  document.body.appendChild(anchor);
+				  // Add the anchor to the page
+				  document.body.appendChild(anchor);
 
-  // Trigger a click event to activate the anchor
-  anchor.click();
+				  // Trigger a click event to activate the anchor
+				  anchor.click();
 
-  // Remove the anchor from the page, it's not needed anymore
-  document.body.removeChild(anchor);
-}
+				  // Remove the anchor from the page, it's not needed anymore
+				  document.body.removeChild(anchor);
+				}
 
-playerInstance.on('ready', function() {
-  // Move the timeslider in-line with other controls
-  const playerContainer = playerInstance.getContainer();
-  const buttonContainer = playerContainer.querySelector('.jw-button-container');
-  const spacer = buttonContainer.querySelector('.jw-spacer');
-  const timeSlider = playerContainer.querySelector('.jw-slider-time');
-  buttonContainer.replaceChild(timeSlider, spacer);
-});
-</script>
-<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-<script>LA.init({id: "JHeurYfwPGlUTZgR",ck: "JHeurYfwPGlUTZgR"})</script>
+				playerInstance.on('ready', function() {
+				  // Move the timeslider in-line with other controls
+				  const playerContainer = playerInstance.getContainer();
+				  const buttonContainer = playerContainer.querySelector('.jw-button-container');
+				  const spacer = buttonContainer.querySelector('.jw-spacer');
+				  const timeSlider = playerContainer.querySelector('.jw-slider-time');
+				  buttonContainer.replaceChild(timeSlider, spacer);
+				});
+				</script>
+				<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+				<script>LA.init({id: "JHeurYfwPGlUTZgR",ck: "JHeurYfwPGlUTZgR"})</script>
+			</div>
+			<div id="links" class="col-md-12 text-center" style="font-size:18px;font-weight:blod">
+				<label style="font-size:18px;font-weight:blod">友情链接：</label>
+				<a href="https://www.swiftdown.com/" target="_blank">极速资源</a> | 
+				<a href="https://www.themepretty.com/" target="_blank">漂亮主题</a> | 
+				<a href="https://ruby-china.org/sites" target="_blank">RubyChina酷站</a>
+			</div>
+			
+		    <footer id="footer" class="col-md-12 text-center" style="margin-top: 5px;">
+			    <div class="inner">
+			    	<p style="font-size:18px;font-weight:blod">
+			    	Copyright © 2023 www.itisxx.com. All Rights Reserved。&nbsp;&nbsp;|&nbsp;&nbsp;
+			        Made with <span class='with-love'><i class='fas fa-heartbeat'></i></span>
+			        </p>
+					
+			    </div>
+			</footer>
+		</div>
+	</div>
+</div>
+<script src="//cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="//cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/js/solid.min.js"></script>
+<script src="//cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js"></script>
 </body>
 </html>
